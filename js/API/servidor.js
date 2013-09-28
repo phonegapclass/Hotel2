@@ -4,7 +4,7 @@ function enviarRegistro(nombre,email,telefono){
 	$.ajax({
 		type: "POST",
 		url: "http://www.igitsoft.com/pgtest.php",
-		data: { nom: "John", mai: "Boston", tel: telefono },
+		data: "nom="+nombre+"&mai="+email+"&tel="+tel,
 		error: function(){
 			alert('Ajax error');	
 		}
