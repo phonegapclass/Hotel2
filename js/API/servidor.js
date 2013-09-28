@@ -4,9 +4,9 @@ function enviarRegistro(nombre,email,telefono){
 	$.ajax({
 		type: "POST",
 		url: "http://192.168.1.69/pgtest.php",
-		data: "nom="+nombre+"&mai="+email+"&tel="+tel,
+		data: "nom="+nombre+"&mai="+email+"&tel="+telefono,
 		error: function(){
-			alert('Ajax error');	
+			alert('Ajax error');
 		}
 	}).done(function( msg ){
 		alert( "Data Saved: " + msg );
